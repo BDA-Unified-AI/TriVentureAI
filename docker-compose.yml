@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  db:
+    image: mongo:6.0
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: triventure
+    volumes:
+      - mongo_data:/data/db
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: triventure
+      ME_CONFIG_MONGODB_URL: mongodb://root:triventure@db:27017/
+    depends_on:
+      - db
+
+volumes:
+  mongo_data: {} # It's good practice to explicitly define the volume like this

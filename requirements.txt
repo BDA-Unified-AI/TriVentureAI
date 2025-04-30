@@ -1,0 +1,10 @@
+python-dotenv
+onnxruntime
+uvicorn
+pymongo
+fastapi
+pandas
+scikit-learn
+openpyxl
+transformers
+underthesea

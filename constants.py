@@ -1,0 +1,7 @@
+DEFAULT_TEXT_ANNOTATION_FILE = "Datasets/Query/datasets_text.json"
+DEFAULT_TAGS = "Datasets/Query/tags.json"
+DEFAULT_DESTINATIONS = "Datasets/Places/des_retags_copilot.xlsx"
+DEFAULT_WEIGHTS_BIAS_VECTOR = "Model_API/Saved_Model/weights_bias_vector.npy"
+DEFAULT_FEATURE_NAMES = "Model_API/Saved_Model/feature_names.npy"
+DEFAULT_PRETRAIN_MODEL_NAME_TOKENIZER = "vinai/phobert-base-v2"
+ONNX_MODEL_PATH = "Saved_Model/key_ner.onnx"

@@ -1,0 +1,10 @@
+__pycache__
+LLM
+venv
+Saved_Model
+test.ipynb
+.idea
+database-data
+**.env
+old_version
+.venv
